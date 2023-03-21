@@ -18,3 +18,6 @@ merged_file_path = os.path.join(os.path.dirname(pdf_files[0]),'merged.pdf')
 with open(merged_file_path, 'wb') as file:
     pdf_merger.write(file)
     print(f"Merged file saved to {merged_file_path}")
+
+# Open the location of the saved file in a dialog box
+os.startfile(os.path.dirname(merged_file_path))
